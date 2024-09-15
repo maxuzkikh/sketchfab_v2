@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+
+# Build output
+/build
+
+# Dependency directories
+frontend/node_modules/
+backend/node_modules/
