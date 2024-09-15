@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
 
+// Registration Route
 router.post('/register', async (req, res) => {
   try {
     const { username, email, password } = req.body;
@@ -42,7 +43,11 @@ router.post('/login', async (req, res) => {
     }
 
     // Ensure JWT_SECRET is used here
-    console.log('JWT_SECRET:', process.env.JWT_SECRET);
+    if (!process.env.JWT_SECRET) {
+      throw new Error('JWT_SECRET is not set in the environment variables');
+    }
+
+    console.log('JWT_SECRET:', process.env.JWT_SECRET); // Log JWT_SECRET for debugging
 
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
