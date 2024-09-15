@@ -71,7 +71,7 @@ function Models() {
         <input
           name="file"
           type="file"
-          accept=".glb,.gltf"
+          accept=".zip,.glb,.gltf"
           onChange={handleChange}
           required
         />
