@@ -1,0 +1,76 @@
+/* frontend/src/styles/styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    padding: 20px;
+  }
+  
+  .logout-button {
+    float: right;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  /* Auth Styles */
+  .auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-container input {
+    margin: 5px 0;
+    padding: 10px;
+  }
+  
+  .toggle-button {
+    margin-top: 10px;
+  }
+  
+  /* Models Styles */
+  .models-container {
+    margin-top: 20px;
+  }
+  
+  .upload-form {
+    margin-bottom: 40px;
+  }
+  
+  .upload-form input,
+  .upload-form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+  }
+  
+  .models-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .model-item {
+    width: 45%;
+    margin: 2.5%;
+  }
+  
+  .model-item h3 {
+    margin-top: 0;
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
